@@ -2,7 +2,7 @@ import openai
 from typing import TextIO
 
 # Set up the API credentials
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 def get_response(p: str):

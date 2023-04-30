@@ -47,10 +47,9 @@ def submit():
     retriever_2.append(request.form.get('q2'))
     retriever_2.append(request.form.get('q3'))
     retriever_2.append(result[0])
-    description.extend(gpt.fc(retriever_2[3], retriever_2[0], retriever_2[1], retriever_2[2]))
     uni = web_use_2.fc(retriever_2, retriever_1)
     result.extend(uni)
-
+    description.extend(gpt.fc(result[0], result[1], result[2], result[3]))
     return redirect('/thanks')
 
 
