@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+
+      .left-section {
+        width: 60%;
+        margin-right: 30px;
+        box-sizing: border-box;
+      }
+
+      .right-section {
+        width: 35%;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='results.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <h1><font style="color:yellow"><font style="font-family:georgia">Universities recommended</font></font></h1>
+		<font style="font-family:verdana">
+			<h2>{{x}}</h2>
+            <p>{{m}}</p>
+			<h2>{{y}}</h2>
+            <p>{{n}}</p>
+			<h2>{{z}}</h2>
+            <p>{{o}}</p>
+		</font>
+      </div>
+      <div class="right-section">
+		<br><br><br>
+        <font style="color:yellow"><h1><font style="font-family:georgia">Program recommended</font></h1></font>
+		<span style='font-size:30px;'>&#8627;</span>
+		<font size="+3" style="font-family:verdana">{{a}}</font>
+          <p>{{p}}</p>
+      </div>
+    </div>
+	<br><br><br><br>
+	<div class="center"><font style="font-size:30px"><font style="color:skyblue"><font style="font-family:cursive">Good luck applying to your favorite university!</font></font></font></div>
+  </body>
+</html>

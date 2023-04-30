@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MajorHack</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='second.css') }}">
+</head>
+<body>
+<div class="heading">
+    <h1 id="head">DeerHacks Project - MajorHack Survey Form</h1>
+    <h2 id="subheading">Discover your true passion HERE!</h2>
+</div>
+<form action="/submit" method="post">
+    <div id="content1">
+        <br>
+        <label id="option0">Select level of degree</label><br><br>
+        <label><input type="radio" name="q1" class="larger" value="I'm looking for a first university course" required>I'm looking for a first university course<br><br></label>
+        <label><input type="radio" name="q1" class="larger" value="I already have a degree and I'm looking for an advanced course">I already have a degree and I'm looking for an advanced course<br><br></label>
+        <label id="option1">Select what matters the most to you</label><br><br>
+        <label><input id="United States" type="radio" name="q2" value="United States" checked required> <label for="United States">United States</label><br><br></label>
+        <label><input id="United Kingdom" type="radio" name="q2" value="United Kingdom"> <label for="United Kingdom">United Kingdom</label><br><br></label>
+        <label><input id="Australia" type="radio" name="q2" value="Australia"> <label for="Australia">Australia</label><br><br></label>
+        <label><input id="Canada" type="radio" name="q2" value="Canada"> <label for="Canada">Canada</label><br><br></label>
+        <label><input id="China" type="radio" name="q2" value="China"> <label for="China">China</label><br><br></label>
+        <label><input id="Germany" type="radio" name="q2" value="Germany"> <label for="Germany">Germany</label><br><br></label>
+        <label><input id="Singapore" type="radio" name="q2" value="Singapore"> <label for="Singapore">Singapore</label><br><br></label>
+        <label><input id="Japan" type="radio" name="q2" value="Japan"> <label for="Japan">Japan</label><br><br></label>
+        <label><input id="France" type="radio" name="q2" value="France"> <label for="France">France</label><br><br></label>
+        <label id="option2">Select what matters the most to you</label><br><br>
+        <label><input id="The teaching is good, and students learn well" type="radio" name="q3" value="The teaching is good, and students learn well" required> <label for="The teaching is good, and students learn well">The teaching is good, and students learn well</label><br><br></label>
+        <label><input id="The students like it" type="radio" name="q3" value="The students like it"> <label for="The students like it">The students like it</label><br><br></label>
+        <label><input id="The university is strong in research" type="radio" name="q3" value="The university is strong in research"> <label for="The university is strong in research">The university is strong in research</label><br><br></label>
+        <label><input id="A university with a focus on being international" type="radio" name="q3" value="A university with a focus on being international"> <label for="A university with a focus on being international">A university with a focus on being international</label><br><br></label>
+        <button type="submit"><h3>Submit<a href="results.html"></a></h3></button>
+    </div>
+</form>
+</body>
+</html>

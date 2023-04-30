@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MajorHack</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='website.css') }}">
+</head>
+<body>
+<div class="heading">
+    <h1 id="head">DeerHacks Project - MajorHack Survey Form</h1>
+    <h2 id="subheading">Discover your true passion HERE!</h2>
+</div>
+<form action="/next" method="post">
+    <div id="content1">
+        <label>Full Name</label> <br><br>
+        <input type="name" name="name" placeholder="Enter your full name" class="box" required> <br><br>
+        <label>Email</label> <br><br>
+        <input type="email" name="email" placeholder="Enter your email" class="box" required> <br><br>
+        <label>Age (Optional)</label> <br><br>
+        <input type="age" name="age" placeholder="Enter your age" class="box"> <br><br>
+        <div id="option1">
+            <label>Are you ready to take the survey?</label>
+            <select>
+                <option name="Pick one answer">Pick one answer</option>
+                <option value="Yes!">Yes!</option>
+                <option value = "Maybe next time (?)">Maybe next time (?)</option>
+            </select>
+        </div>
+        <br><br>
+        <label id="option2">You're packing your bag for another day of classes.
+            What are you looking forward to most of all?</label><br><br>
+        <label><input type="radio" name="q2" class="larger" value="Literature or Languages" required>Literature or
+            Languages<br><br></label>
+        <label><input type="radio" name="q2" class="larger" value="Science or Health">Science or
+            Health<br><br></label>
+        <label><input type="radio" name="q2" class="larger" value="Math" required>Math<br><br></label>
+        <label><input type="radio" name="q2" class="larger" value="History or the other Social Sciences">History or the other
+            Social Sciences<br><br></label>
+        <label><input type="radio" name="q2" class="larger" value="Business Class or Off-Campus Internship">Business Class or
+            Off-Campus Internship<br><br></label>
+        <br>
+        <label id="option3">It’s the night before a big exam. What are you
+            doing?</label><br><br>
+        <label><input type="radio" name="q3" class="larger" value="Trying to figure out what’s most likely to be on the test" required>Trying to figure out
+            what’s most likely to be on the test<br><br></label>
+        <label><input type="radio" name="q3" class="larger" value="Chatting with friends…and maybe doing a little studying in between">Chatting with
+            friends…and maybe doing a little studying in between<br><br></label>
+        <label><input type="radio" name="q3" class="larger" value="Rushing to squeeze in some last-minute prep after a work shift">Rushing to squeeze
+            in some last-minute prep after a work shift<br><br></label>
+        <label><input type="radio" name="q3" class="larger" value="Tutoring a friend">Tutoring a friend
+            <br><br></label>
+        <label><input type="radio" name="q3" class="larger" value="Reviewing all of my notes into the wee hours">Reviewing all of my
+            notes into the wee hours<br><br></label>
+        <br>
+        <label id="option4">You just won a contest and get to invite anyone in
+            the world to join you for a meal. Whose brain would you like to pick over lunch?</label><br><br>
+        <label><input type="radio" name="q4" class="larger" value="The founder of a successful company" required>The founder of a successful company<br><br></label>
+        <label><input type="radio" name="q4" class="larger" value="A lead scientist on a groundbreaking project">A lead scientist on a groundbreaking project<br><br></label>
+        <label><input type="radio" name="q4" class="larger" value="A philanthropist or key social justice figure">A philanthropist or key social justice figure<br><br></label>
+        <label><input type="radio" name="q4" class="larger" value="A past or present world leader">A past or present world leader<br><br></label>
+        <label><input type="radio" name="q4" class="larger" value="A talk show host or other television personality">A talk show host or other television personality<br><br></label>
+        <br>
+        <label id="option5">After school, how would you prefer to spend your time?</label><br><br>
+        <label><input type="radio" name="q5" class="larger" value="Volunteering in the community or tutoring a classmate" required>Volunteering in the community or tutoring a classmate<br><br></label>
+        <label><input type="radio" name="q5" class="larger" value="Polishing my argument for the debate team">Polishing my argument for the debate team<br><br></label>
+        <label><input type="radio" name="q5" class="larger" value="Rehearsing my lines for the school play">Rehearsing my lines for the school play<br><br></label>
+        <label><input type="radio" name="q5" class="larger" value="At sports practice">At sports practice<br><br></label>
+        <label><input type="radio" name="q5" class="larger" value="Competing in Math League">Competing in Math League<br><br></label>
+        <br>
+        <label id="option6">You’re done with homework and you have some time to unwind. What do you do?</label><br><br>
+        <label><input type="radio" name="q6" class="larger" value="Make a new video for TikTok or my YouTube channel." required>Make a new video for TikTok or my YouTube channel.<br><br></label>
+        <label><input type="radio" name="q6" class="larger" value="Play a video game. I will get to level 9!">Play a video game. I will get to level 9!<br><br></label>
+        <label><input type="radio" name="q6" class="larger" value="Work on my new business ideas or update my profile on LinkedIn">Work on my new business ideas or update my profile on LinkedIn<br><br></label>
+        <label><input type="radio" name="q6" class="larger" value="Reach out to a friend to see how they're doing.">Reach out to a friend to see how they're doing.<br><br></label>
+        <label><input type="radio" name="q6" class="larger" value="Catch up on the news of the day.">Catch up on the news of the day.<br><br></label>
+        <br>
+        <label id="option7">You’re brilliant and charming, of course, but your favorite teacher would also describe you as:</label><br><br>
+        <label><input type="radio" name="q7" class="larger" value="Analytical" required>Analytical<br><br></label>
+        <label><input type="radio" name="q7" class="larger" value="Creative">Creative<br><br></label>
+        <label><input type="radio" name="q7" class="larger" value="Inquisitive">Inquisitive<br><br></label>
+        <label><input type="radio" name="q7" class="larger" value="Compassionate">Compassionate<br><br></label>
+        <label><input type="radio" name="q7" class="larger" value="Persuasive">Persuasive<br><br></label>
+        <br>
+        <label id="option8">Hey, we all have priorities. When it comes to your future career, you can’t wait to:</label><br><br>
+        <label><input type="radio" name="q8" class="larger" value="Find new solutions to real-world problems" required>Find new solutions to real-world problems<br><br></label>
+        <label><input type="radio" name="q8" class="larger" value="Be surrounded by interesting people">Be surrounded by interesting people<br><br></label>
+        <label><input type="radio" name="q8" class="larger" value="Be my own boss and create something new">Be my own boss and create something new<br><br></label>
+        <label><input type="radio" name="q8" class="larger" value="Help others and better my community">Help others and better my community<br><br></label>
+        <label><input type="radio" name="q8" class="larger" value="Challenge myself intellectually">Challenge myself intellectually<br><br></label>
+        <br>
+        <label id="option9">Vacation time! Which of the following sounds like your dream trip?</label><br><br>
+        <label><input type="radio" name="q9" class="larger" value="Going to a camp or workshop where you can learn something new" required>Going to a camp or workshop where you can learn something new<br><br></label>
+        <label><input type="radio" name="q9" class="larger" value="Soaking up the history, politics and culture in a city like Washington, D.C.">Soaking up the history, politics and culture in a city like Washington, D.C.<br><br></label>
+        <label><input type="radio" name="q9" class="larger" value="Camping and spending some time taking in the great outdoors">Camping and spending some time taking in the great outdoors<br><br></label>
+        <label><input type="radio" name="q9" class="larger" value="An organized group trip to work alongside and learn from another community">An organized group trip to work alongside and learn from another community<br><br></label>
+        <label><input type="radio" name="q9" class="larger" value="Backpacking across Europe with friends">Backpacking across Europe with friends<br><br></label>
+        <br>
+        <label id="option10">It's movie night. What are you most likely to watch?</label><br><br>
+        <label><input type="radio" name="q10" class="larger" value="A thought-provoking drama or documentary" required>A thought-provoking drama or documentary<br><br></label>
+        <label><input type="radio" name="q10" class="larger" value="A quirky independent film">A quirky independent film<br><br></label>
+        <label><input type="radio" name="q10" class="larger" value="Whatever’s tops at the box office. I want to know what everyone else is talking about.">Whatever’s tops at the box office. I want to know what everyone else is talking about.<br><br></label>
+        <label><input type="radio" name="q10" class="larger" value="A comedy">A comedy<br><br></label>
+        <label><input type="radio" name="q10" class="larger" value="A sci-fi flick">A sci-fi flick<br><br></label>
+        <br>
+        <label id="option11">Would you rather:</label><br><br>
+        <label><input type="radio" name="q11" class="larger" value="A more artsy environment" required>A more artsy environment<br><br></label>
+        <label><input type="radio" name="q11" class="larger" value="A business setting">A business setting<br><br></label>
+        <label><input type="radio" name="q11" class="larger" value="Work in another aspect of business setting">A business setting<br><br></label>
+        <label><input type="radio" name="q11" class="larger" value="Work in sales">A business setting<br><br></label>
+        <label><input type="radio" name="q11" class="larger" value="Jump into your career after your bachelor’s degree">Jump into your career after your bachelor’s degree<br><br></label>
+        <label><input type="radio" name="q11" class="larger" value="Earn an advanced degree first">Earn an advanced degree first<br><br></label>
+        <button type="submit"><h3>Next<a href="second.html"></a></h3></button>
+    </div>
+</form>
+</body>
+</html>
